@@ -12,11 +12,13 @@ import InLine from "./cssstyling/InLine";
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./formhandling/Form";
+import LifecycleA from "./reactlifecycle/LifecycleA";
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleA />
+      {/* <Form /> */}
       {/* <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1> */}
       {/* <InLine /> */}
