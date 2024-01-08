@@ -15,11 +15,18 @@ import Form from "./formhandling/Form";
 import LifecycleA from "./reactlifecycle/LifecycleA";
 import FragmentDemo from "./fragment/FragmentDemo";
 import Table from "./fragment/Table";
+import PureComp from "./purecomponent/PureComp";
+import ParentComp from "./purecomponent/ParentComp";
+import RefsDemo from "./refs/RefsDemo";
+import FocusInput from "./refs/FocusInput";
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      {/* <FocusInput /> */}
+      {/* <RefsDemo /> */}
+      {/* <ParentComp /> */}
+      {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
       {/* <Form /> */}
