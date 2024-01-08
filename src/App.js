@@ -20,11 +20,34 @@ import ParentComp from "./purecomponent/ParentComp";
 import RefsDemo from "./refs/RefsDemo";
 import FocusInput from "./refs/FocusInput";
 import FRParentInput from "./refsforwording/FRParentInput";
+import GetDataById from "./axios/GetDataById";
+import UseStateExample from "./hookspractice/UseStateExample";
+import UseEffectExample from "./hookspractice/UseEffectExample";
+import PortalDemo from "./portal/PortalDemo";
+import Hero from "./errorboundry/Hero";
+import ErrorBondary from "./errorboundry/ErrorBondary";
+import ClickCounter from "./higherordercomponent_1/ClickCounter";
+import HoverCounter from "./higherordercomponent_1/HoverCounter";
 
 function App() {
   return (
     <div className="App">
-      <FRParentInput />
+      <ClickCounter />
+      <HoverCounter />
+      {/* <ErrorBondary>
+        <Hero heroName="Batman" />
+      </ErrorBondary>
+      <ErrorBondary>
+        <Hero heroName="Superman" />
+      </ErrorBondary>
+      <ErrorBondary>
+        <Hero heroName="Joker" />
+      </ErrorBondary> */}
+      {/* <PortalDemo /> */}
+      {/* <UseEffectExample /> */}
+      {/* <UseStateExample /> */}
+      {/* <GetDataById /> */}
+      {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
