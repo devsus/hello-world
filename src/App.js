@@ -19,10 +19,12 @@ import PureComp from "./purecomponent/PureComp";
 import ParentComp from "./purecomponent/ParentComp";
 import RefsDemo from "./refs/RefsDemo";
 import FocusInput from "./refs/FocusInput";
+import FRParentInput from "./refsforwording/FRParentInput";
 
 function App() {
   return (
     <div className="App">
+      <FRParentInput />
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
