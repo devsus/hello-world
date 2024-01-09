@@ -32,11 +32,18 @@ import ClickCounterTwo from "./render/ClickCounterTwo";
 import HowerCounterTwo from "./render/HowerCounterTwo";
 import User from "./render/User";
 import Counter from "./render/Counter";
+import ComponentC from "./context/ComponentC";
+import { UserProvider } from "./context/userContext";
 
 function App() {
   return (
     <div className="App">
-      <Counter
+      {/* <ComponentC /> */}
+      {/* setting value for context and wrappig component on UserProvider context */}
+      {/* <UserProvider value="Devendra">
+        <ComponentC />
+      </UserProvider> */}
+      {/* <Counter
         //The term render prop refer to a technique for sharing code between react component using  a prop whose values is function
         render={(count, incrementCount) => (
           <ClickCounterTwo
@@ -53,7 +60,7 @@ function App() {
             incrementCount={incrementCount}
           ></HowerCounterTwo>
         )}
-      />
+      /> */}
       {/* <ClickCounterTwo />
       <HowerCounterTwo />
       <User
