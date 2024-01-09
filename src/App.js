@@ -3,7 +3,7 @@ import "./App.css";
 import Welcome from "./components/Welcome";
 import Hello from "./components/Hello";
 import Message from "./components/Message";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
 import ClassClick from "./components/ClassClick";
 import UserGreeting from "./conditional-rendoring/UserGreeting";
 import NameList from "./listRendoring/NameList";
@@ -28,12 +28,40 @@ import Hero from "./errorboundry/Hero";
 import ErrorBondary from "./errorboundry/ErrorBondary";
 import ClickCounter from "./higherordercomponent_1/ClickCounter";
 import HoverCounter from "./higherordercomponent_1/HoverCounter";
+import ClickCounterTwo from "./render/ClickCounterTwo";
+import HowerCounterTwo from "./render/HowerCounterTwo";
+import User from "./render/User";
+import Counter from "./render/Counter";
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter name="Devendra" />
-      <HoverCounter />
+      <Counter
+        //The term render prop refer to a technique for sharing code between react component using  a prop whose values is function
+        render={(count, incrementCount) => (
+          <ClickCounterTwo
+            count={count}
+            incrementCount={incrementCount}
+          ></ClickCounterTwo>
+        )}
+      />
+      <Counter
+        //The term render prop refer to a technique for sharing code between react component using  a prop whose values is function
+        render={(count, incrementCount) => (
+          <HowerCounterTwo
+            count={count}
+            incrementCount={incrementCount}
+          ></HowerCounterTwo>
+        )}
+      />
+      {/* <ClickCounterTwo />
+      <HowerCounterTwo />
+      <User
+        ////The term render prop refer to a technique for sharing code between react component using  a prop whose values is function
+        render={(isLoggedIn) => (isLoggedIn ? "Java developer" : "Guest")}
+      /> */}
+      {/* <ClickCounter name="Devendra" />
+      <HoverCounter /> */}
       {/* <ErrorBondary>
         <Hero heroName="Batman" />
       </ErrorBondary>
