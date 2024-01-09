@@ -32,7 +32,7 @@ import HoverCounter from "./higherordercomponent_1/HoverCounter";
 function App() {
   return (
     <div className="App">
-      <ClickCounter />
+      <ClickCounter name="Devendra" />
       <HoverCounter />
       {/* <ErrorBondary>
         <Hero heroName="Batman" />

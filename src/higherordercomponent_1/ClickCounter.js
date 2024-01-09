@@ -6,12 +6,15 @@ export class ClickCounter extends Component {
   render() {
     //const { count } = this.state;
     const { count, incrementCount } = this.props;
+
     return (
       <div>
-        <button onClick={incrementCount}>Clicked {count} times</button>
+        <button onClick={incrementCount}>
+          {this.props.name}Clicked {count} times
+        </button>
       </div>
     );
   }
 }
 //calling UpdatedComponent here
-export default WithCounter(ClickCounter);
+export default WithCounter(ClickCounter, 5);

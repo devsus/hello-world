@@ -12,4 +12,4 @@ class HoverCounter extends Component {
 }
 
 //calling UpdatedComponent here
-export default WithCounter(HoverCounter);
+export default WithCounter(HoverCounter, 10);
