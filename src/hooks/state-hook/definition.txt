@@ -1,0 +1,43 @@
+Hooks are new feature addition in react version 16.8 which allow you to use react features   without having to 
+write a class .
+
+Ex: state of component 
+
+Hooks don't work inside a class 
+
+Why Hooks ?
+Reason 1:
+Understand how this key word work in java script .
+Remember to bind event handler in class component .
+class dont minify very well and make hot reloading very unrelible .
+
+Reason 2:
+There is no perticular reason statefull component logic .
+HOC and render props pattern do address this problem .
+Make the code harder to follow .
+There is need to share statefull logic in a better way .
+
+
+Reason 3:
+Create component for complex scenarious such a data fatching and subscribing to events
+related code is not orgnize in one place .
+Ex: Data fetching - in componentDidmount and componentDidUpdate.
+Ex: Event listeners - In componentDidmount and componentWilmount.
+Beacuse of statefull logic.
+
+You need to use 16.8 version for hooks 
+
+cant use hooks inside class component
+
+we can use hooks in functions 
+
+no need to use this keyword
+
+Rulse of hooks :
+"Only call hooks at the Top level of files"
+Dont call Hooks inside loops,conditions  or nested function 
+
+"Only call Hooks from React functions"
+Call them from within React functional components and not just any regular Javascript function 
+
+

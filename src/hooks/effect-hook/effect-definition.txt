@@ -1,0 +1,36 @@
+Updating the document title to the current counter value 
+means all method working once
+
+componentDidMount(){
+    document.title = `You clicked ${this.state.count} times`; 
+}
+
+componentDidUpdate(){
+    document.title = `You clicked ${this.state.count} times`; 
+}
+
+
+==================for time interval==============================
+componentDidMount(){
+    this.interval = setInterval(this.tick,1000); 
+}
+
+componentWillMount(){
+    clearInterval(this.interval); 
+}
+
+===============combine the Two side effect========================
+componentDidMount(){
+    document.title = `You clicked ${this.state.count} times`; 
+    this.interval = setInterval(this.tick,1000); 
+}
+componentDidUpdate(){
+    document.title = `You clicked ${this.state.count} times`; 
+}
+componentWillMount(){
+    clearInterval(this.interval); 
+}
+
+
+The effect pf hook lets you perform side effect in function components.
+it is a close replacement of componentDidMount,componentDidUpdate and componentWillMount .

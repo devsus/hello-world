@@ -21,8 +21,6 @@ import RefsDemo from "./refs/RefsDemo";
 import FocusInput from "./refs/FocusInput";
 import FRParentInput from "./refsforwording/FRParentInput";
 import GetDataById from "./axios/GetDataById";
-import UseStateExample from "./hookspractice/UseStateExample";
-import UseEffectExample from "./hookspractice/UseEffectExample";
 import PortalDemo from "./portal/PortalDemo";
 import Hero from "./errorboundry/Hero";
 import ErrorBondary from "./errorboundry/ErrorBondary";
@@ -34,10 +32,27 @@ import User from "./render/User";
 import Counter from "./render/Counter";
 import ComponentC from "./context/ComponentC";
 import { UserProvider } from "./context/userContext";
+import PostList from "./httpaxios/PostList";
+import PostForm from "./httpaxios/PostForm";
+import ClassCounter from "./hooks/state-hook/ClassCounter";
+import HookCounter from "./hooks/state-hook/HookCounter";
+import HooksCounterTwo from "./hooks/state-hook/HooksCounterTwo";
+import HookConterThree from "./hooks/state-hook/HookConterThree";
+import HookCounterFour from "./hooks/state-hook/HookCounterFour";
+import ClassCounterOne from "./hooks/effect-hook/ClassCounterOne";
 
 function App() {
   return (
     <div className="App">
+      <ClassCounterOne />
+      {/* <HookCounterFour /> */}
+      {/* <HookConterThree /> */}
+      {/* <HooksCounterTwo /> */}
+      {/* <HookCounter /> */}
+      {/* <ClassCounter /> */}
+      {/* hooks  */}
+      {/* <PostForm /> */}
+      {/* <PostList /> */}
       {/* <ComponentC /> */}
       {/* setting value for context and wrappig component on UserProvider context */}
       {/* <UserProvider value="Devendra">
